@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="line">
+    <select name="instruments" id="instruments">
+        <option value="piano">Piano</option>
+        <option value="rockGuitar">Rock guitar</option>
+        <option value="bluesGuitar">Blues guitar</option>
+    </select>
     <input type="text" name="music" value="" id="notes" onkeyup="this.value = this.value.toUpperCase();">
     <button id='btnPlay'>Play</button>
+    </div>
     <p>Вводите ноты в английском формате через пробел</p>
     <p>Например: A2 B4 B1 F5</p>
-    <p>Диапазон A-G,1-7, без диезов</p>
+    <p>Диапазон для пианино: A-G,1-7, без диезов </p>
+    <p>Для гитар ноты: G4, A4, C5, D5, E5, G5, A5, C6, D6, D#6, E6, G6, A6, C7, D7</p>
 </body>
 <script src="./script.js"></script>
 </html>

@@ -84,43 +84,44 @@ const pianoFolder = {
   F7:"./piano/f7.ogg",
   G7:"./piano/g7.ogg"
 };
-let guitarFolder = [
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/G4.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/A4.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/C5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/E5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/G5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/A5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/C6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D%236.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/E6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/G6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/A6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/C7.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D7.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_G4.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_A4.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_C5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_E5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_G5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_A5.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_C6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D%236.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_E6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_G6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_A6.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_C7.mp3',
-  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D7.mp3'
-];
+const bluesGuitarFolder = {
+  G4:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/G4.mp3',
+  A4:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/A4.mp3',
+  C5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/C5.mp3',
+  D5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D5.mp3',
+  E5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/E5.mp3',
+  G5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/G5.mp3',
+  A5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/A5.mp3',
+  C6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/C6.mp3',
+  D6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D6.mp3',
+  'D#6':'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D%236.mp3',
+  E6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/E6.mp3',
+  G6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/G6.mp3',
+  A6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/A6.mp3',
+  C7:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/C7.mp3',
+  D7:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/D7.mp3'
+};
+const rockGuitarFolder={
+  G4:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_G4.mp3',
+  A4:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_A4.mp3',
+  C5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_C5.mp3',
+  D5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D5.mp3',
+  E5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_E5.mp3',
+  G5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_G5.mp3',
+  A5:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_A5.mp3',
+  C6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_C6.mp3',
+  D6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D6.mp3',
+  'D#6':'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D%236.mp3',
+  E6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_E6.mp3',
+  G6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_G6.mp3',
+  A6:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_A6.mp3',
+  C7:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_C7.mp3',
+  D7:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/d_D7.mp3'
+};
 document.querySelector("#btnPlay").addEventListener('click', () => {
   
   let notesInput = document.querySelector("#notes").value;
   let notes = [];
-  let freqs = [];
   let curNote = "";
   for (let i = 0; i < notesInput.length; i++) {
 
@@ -134,10 +135,30 @@ document.querySelector("#btnPlay").addEventListener('click', () => {
   notes.push(curNote);
   console.log(notes);
 
-  let delay = 0;
+let delay = 0;
+let instruments = document.querySelector('#instruments');
 
-  notes.forEach((not)=>{
-    play(pianoFolder[not],delay);
-    delay++;
-  });
+if(instruments.value=="piano")
+  {
+    
+    notes.forEach((not)=>{
+      play(pianoFolder[not],delay);
+      delay++;
+    });
+  }
+  if(instruments.value=="bluesGuitar")
+  {
+    console.log(instruments.value);
+    notes.forEach((not)=>{
+      play(bluesGuitarFolder[not],delay);
+      delay++;
+    });
+  }
+  if(instruments.value=="rockGuitar")
+  {
+    notes.forEach((not)=>{
+      play(rockGuitarFolder[not],delay);
+      delay++;
+    });
+  }
 });
