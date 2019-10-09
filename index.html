@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <input type="text" name="music" value="" id="notes">
+    <input type="text" name="music" value="" id="notes" onkeyup="this.value = this.value.toUpperCase();">
     <button id='btnPlay'>Play</button>
+    <p>Вводите ноты в английском формате через пробел</p>
+    <p>Например: A2 B4 B1 F5</p>
+    <p>Диапазон A-G,1-7, без диезов</p>
 </body>
 <script src="./script.js"></script>
 </html>
